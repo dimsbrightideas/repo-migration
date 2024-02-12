@@ -187,21 +187,21 @@
          <summary><b>Click here to see example...</b></summary>
          
          <!-- Info note describing example. This is just a single row table that makes it look like the note is in a box -->
-         > :information_source: &nbsp; In the example below the "EDI_Viewer" repository is migrated from TFS to the migration-test-repo-tfs repository that is owned by the user frasers-dim.
+         > :information_source: &nbsp; In the example below the "Rerpo Folder" repository is migrated from TFS to the migration-test-repo-tfs repository that is owned by the user frasers-dim.
 
          <!-- Table of example scenario -->
          | Variable Names | Description | Example Value |
          | -------------- | ----------- | ------------- |
-         | TfsUrl | Source repository connection address and port. | http://vmtfs01.sportski.com:8080/tfs/defaultcollection |
-         | TfsPath | Source repository path folder. If unsure you can get this by connecting to TFS in Visual Studio using the Source Control Explorer. | /IT/Apps/EDI_Viewer | 
-         | RepoUrl | Destination repository URL (GitHub, AzureDevOps). For GitHub you need to include the .git extension at the end of the URL. | https://github.com/frasers-dim/migration-test-repo-tfs.git | 
+         | TfsUrl | Source repository connection address and port. | http://tfs.tfs.com:8080/tfs |
+         | TfsPath | Source repository path folder. If unsure you can get this by connecting to TFS in Visual Studio using the Source Control Explorer. | /IT/Apps/Rerpo Folder | 
+         | RepoUrl | Destination repository URL (GitHub, AzureDevOps). For GitHub you need to include the .git extension at the end of the URL. | https://github.com/dimsbrightideas/migration-test-repo-tfs.git | 
          | RepoDirectory | The directory path on your machine that the source repository will be cloned to before it is pushed to the destination repository. | C:\Users\dagejev\source\repos |
-         | RepoFolder | The folder that will be used to house the cloned repository on your machine. | EDI_Viewer |
+         | RepoFolder | The folder that will be used to house the cloned repository on your machine. | Repo Folder |
          | Branch | The master branch name that will be set in the destination repository. Frasers use "main" as the master branch. | main |
          
          <!-- Code snippet -->
          ```
-         .\MigrateTfsToGit.ps1 -TfsUrl 'http://vmtfs01.sportski.com:8080/tfs/defaultcollection' -TfsPath '$/IT/Apps/EDI_Viewer' -RepoUrl 'https://github.com/frasers-dim/migration-test-repo-tfs.git' -RepoDirectory 'C:\Users\dagejev\source\repos' -RepoFolder 'EDI_Viewer' -Branch 'main'
+         .\MigrateTfsToGit.ps1 -TfsUrl 'http://tfs.tfs.com:8080/tfs' -TfsPath '$/path/path/path' -RepoUrl 'https://github.com/dimsbrightideas/migration-test-repo-tfs.git' -RepoDirectory 'C:\Users\dagejev\source\repos' -RepoFolder 'Rerpo Folder' -Branch 'main'
          ```
          <p><img width="auto" alt="GM_Migrate_Tfs_Script" src="Images/GM_Migrate_Tfs_Script.png"></p>
       </details>
